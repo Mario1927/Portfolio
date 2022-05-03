@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-300 z-20 duration-300'>
+  <div id="navbar" className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-20 duration-300'>
       <div>
           <img :src=Logo alt="Brand Logo" className="w-[30px]"/>
       </div>
@@ -36,10 +36,14 @@ import Logo from '../assets/logo.png'
 window.onscroll = function() {
     if(this.prevScrollpos > window.pageYOffset) {
         document.getElementById("navbar").style.top = "0";
+        document.getElementById("navbar").style.boxShadow = "0px 1px 5px rgba(0,0,0,0.5)";
     } else {
         document.getElementById("navbar").style.top = "-80px";
     }
     this.prevScrollpos = window.pageYOffset;
+    if(this.prevScrollpos === 0) {
+        document.getElementById("navbar").style.boxShadow = "none";
+    }
 }
 
 export default {
