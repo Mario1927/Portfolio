@@ -32,8 +32,9 @@
 
 <script>
 import Logo from '../assets/logo.png'
+import { debounce } from 'vue-debounce'
 
-window.onscroll = function() {
+window.onscroll = debounce(function() {
     if(this.prevScrollpos > window.pageYOffset) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("navbar").style.boxShadow = "0px 1px 5px rgba(0,0,0,0.5)";
@@ -44,7 +45,7 @@ window.onscroll = function() {
     if(this.prevScrollpos === 0) {
         document.getElementById("navbar").style.boxShadow = "none";
     }
-}
+}, 100)
 
 export default {
     data() {
