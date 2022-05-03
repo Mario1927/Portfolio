@@ -147,8 +147,4 @@ export default {
     .bg:hover {
         cursor: pointer;
     }
-
-    fa:hover {
-        color: rgb(219 39 119);   
-    }
 </style>
