@@ -11,7 +11,7 @@
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#skills'">Skills</li>
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#works'">Works</li>
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#contact'">Contact</li>
-        <li className="hover:text-[#0a192f] dark:hover:text-slate-100 duration-300 px-4 cursor-pointer text-pink-600"><ThemeToggle/></li>
+        <li className="hover:text-[#0a192f] dark:hover:text-slate-100 duration-300 px-4 cursor-pointer text-[#f9b82c]"><ThemeToggle/></li>
      </ul>
 
      <!-- Hamburger -->
@@ -21,7 +21,8 @@
      </div>
 
     <!-- Mobile Menu -->
-    <ul v-show="isOpen" className='absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'>
+    <ul v-show="isOpen" className='absolute top-0 left-0 w-full h-screen bg-slate-100 dark:bg-[#0a192f] flex flex-col justify-center items-center'>
+        <li className="py-6 text-4xl px-4 cursor-pointer text-[#f9b82c]"><ThemeToggle/></li>
         <li className='py-6 text-4xl px-4 cursor-pointer'>Home</li>
         <li className='py-6 text-4xl px-4 cursor-pointer'>About</li>
         <li className='py-6 text-4xl px-4 cursor-pointer'>Skills</li>

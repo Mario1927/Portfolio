@@ -5,7 +5,7 @@
             <p className='text-4xl font-bold inline border-b-4 text-[#0a192f] dark:text-gray-300 border-pink-600'>
                 Work
             </p>
-            <p className='py-3 text-[#112240] font-medium dark:text-slate-300 dark:font-normal'>// Check out some of my recent work</p>
+            <p className='py-3 text-[#112240] font-medium dark:text-[#f9b82c] dark:font-normal'>// Check out some of my recent work</p>
         </div>
 
         <!-- First project -->
