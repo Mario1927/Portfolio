@@ -32,6 +32,9 @@ import Footer from './components/Footer.vue'
 <script>
 import { mapGetters } from 'vuex'
 
+if(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches){ localStorage.theme = 'dark' }
+else if(!('theme' in localStorage)){ localStorage.theme = 'light' }
+
 export default {
   computed: {
     ...mapGetters(['dark'])

@@ -1,9 +1,12 @@
 import { createStore } from "vuex"
 
+const theme = JSON.stringify(localStorage.getItem("theme"))
+const bool = theme !== 'null' ? theme == '"dark"' ? true : false : true
+
 export const store = createStore({
     state() {
         return {
-            dark: true
+            dark: bool
         }
     },
     mutations: {
