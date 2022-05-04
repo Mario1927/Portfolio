@@ -21,14 +21,16 @@
      </div>
 
     <!-- Mobile Menu -->
-    <ul v-show="isOpen" className='absolute top-0 left-0 w-full h-screen bg-slate-100 dark:bg-[#0a192f] flex flex-col justify-center items-center'>
-        <li className="py-6 text-4xl px-4 cursor-pointer text-[#f9b82c]"><ThemeToggle/></li>
-        <li className='py-6 text-4xl px-4 cursor-pointer'>Home</li>
-        <li className='py-6 text-4xl px-4 cursor-pointer'>About</li>
-        <li className='py-6 text-4xl px-4 cursor-pointer'>Skills</li>
-        <li className='py-6 text-4xl px-4 cursor-pointer'>Works</li>
-        <li className='py-6 text-4xl px-4 cursor-pointer'>Contact</li>
-    </ul>
+    <Transition name="mobile-transition" enter-active-class="animate__animated animate__backInRight animate__faster" leave-active-class="animate__animated animate__backInRight animate__fast animate__backOutRight">
+        <ul v-show="isOpen" className='absolute top-0 left-0 w-full h-screen bg-slate-100 dark:bg-[#0a192f] flex flex-col justify-center items-center'>
+            <li className="py-6 text-4xl px-4 cursor-pointer text-[#f9b82c]"><ThemeToggle/></li>
+            <li className='py-6 text-4xl px-4 cursor-pointer' @click="onStart().then(() => {$scrollTo('#' + 'home')})">Home</li>
+            <li className='py-6 text-4xl px-4 cursor-pointer' @click="onStart().then(() => {$scrollTo('#' + 'about')})">About</li>
+            <li className='py-6 text-4xl px-4 cursor-pointer' @click="onStart().then(() => {$scrollTo('#' + 'skills')})">Skills</li>
+            <li className='py-6 text-4xl px-4 cursor-pointer' @click="onStart().then(() => {$scrollTo('#' + 'works')})">Works</li>
+            <li className='py-6 text-4xl px-4 cursor-pointer' @click="onStart().then(() => {$scrollTo('#' + 'contact')})">Contact</li>
+        </ul>
+    </Transition>
   </div>
 </template>
 
@@ -36,6 +38,7 @@
 import Logo from '../assets/logo.png'
 import { debounce } from 'vue-debounce'
 import ThemeToggle from './ThemeToggle.vue'
+import 'animate.css'
 
 window.onscroll = debounce(function() {
     if(this.prevScrollpos > window.pageYOffset) {
@@ -62,6 +65,10 @@ export default {
         toggleMenu() {
             this.isOpen = !this.isOpen;
         },
+        onStart() {
+            this.toggleMenu();
+            return new Promise(resolve => setTimeout(resolve, 400))
+        }
     },
     components: {
         ThemeToggle

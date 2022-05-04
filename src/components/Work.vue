@@ -31,10 +31,10 @@
                     </ul>
                 </div>
                 <div className="flex relative bottom-[-20px]">
-                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 duration-300' href='https://github.com/Mario1927/Videogames' target='_blank' rel="noreferrer"> 
+                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 dark:hover:text-pink-600 duration-300' href='https://github.com/Mario1927/Videogames' target='_blank' rel="noreferrer"> 
                         <fa :icon="['fab', 'github']" class="fa-lg" />
                     </a>
-                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 duration-300' href='https://videogames-gold.vercel.app/' target='_blank' rel="noreferrer"> 
+                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 dark:hover:text-pink-600 duration-300' href='https://videogames-gold.vercel.app/' target='_blank' rel="noreferrer"> 
                         <fa icon="arrow-up-right-from-square" class="fa-lg" />
                     </a>
                 </div>
@@ -73,10 +73,10 @@
                     </ul>
                 </div>
                 <div className="flex relative bottom-[-20px] justify-end">
-                    <a className='flex justify-between items-center dark:text-white pl-4 hover:text-pink-600 duration-300' href='https://github.com/henry-equipo-ocho/proyecto-grupal' target='_blank' rel="noreferrer"> 
+                    <a className='flex justify-between items-center dark:text-white pl-4 hover:text-pink-600 dark:hover:text-pink-600 duration-300' href='https://github.com/henry-equipo-ocho/proyecto-grupal' target='_blank' rel="noreferrer"> 
                         <fa :icon="['fab', 'github']" class="fa-lg" />
                     </a>
-                    <a className='flex justify-between items-center dark:text-white pl-4 hover:text-pink-600 duration-300' href='https://eztinerary.vercel.app/' target='_blank' rel="noreferrer"> 
+                    <a className='flex justify-between items-center dark:text-white pl-4 hover:text-pink-600 dark:hover:text-pink-600 duration-300' href='https://eztinerary.vercel.app/' target='_blank' rel="noreferrer"> 
                         <fa icon="arrow-up-right-from-square" class="fa-lg" />
                     </a>
                 </div>
@@ -105,10 +105,10 @@
                     </ul>
                 </div>
                 <div className="flex relative bottom-[-20px]">
-                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 duration-300' href='https://github.com/Mario1927/weather' target='_blank' rel="noreferrer"> 
+                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 dark:hover:text-pink-600 duration-300' href='https://github.com/Mario1927/weather' target='_blank' rel="noreferrer"> 
                         <fa :icon="['fab', 'github']" class="fa-lg" />
                     </a>
-                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 duration-300' href='https://weather-mario1927.vercel.app/' target='_blank' rel="noreferrer"> 
+                    <a className='flex justify-between items-center dark:text-white pr-4 hover:text-pink-600 dark:hover:text-pink-600 duration-300' href='https://weather-mario1927.vercel.app/' target='_blank' rel="noreferrer"> 
                         <fa icon="arrow-up-right-from-square" class="fa-lg" />
                     </a>
                 </div>
