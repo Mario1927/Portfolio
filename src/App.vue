@@ -12,15 +12,25 @@ import Email from './components/Email.vue'
 </script>
 
 <template>
-  <NavBar />
-  <Social />
-  <Email />
-  <Home />
-  <About />
-  <Skills />
-  <Work />
+  <div id="main" :class="dark ? 'dark' : 'ligth'">
+    <div class="bg-slate-100 dark:bg-[#0a192f]">
+      <NavBar />
+      <Social />
+      <Email />
+      <Home />
+      <About />
+      <Skills />
+      <Work />      
+    </div>
+  </div>
 </template>
 
-<style>
-  
-</style>
+<script>
+import { mapGetters } from 'vuex'
+
+export default {
+  computed: {
+    ...mapGetters(['dark'])
+  }
+}
+</script>

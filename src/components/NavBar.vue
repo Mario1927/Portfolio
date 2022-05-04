@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-20 duration-300'>
+  <div id="navbar" className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-slate-100 dark:bg-[#0a192f] text-[#233554] font-semibold dark:text-gray-300  z-20 duration-300'>
       <div>
           <img :src=Logo alt="Brand Logo" className="w-[30px]"/>
       </div>
@@ -11,6 +11,7 @@
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#skills'">Skills</li>
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#works'">Works</li>
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#contact'">Contact</li>
+        <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer"><ThemeToggle/></li>
      </ul>
 
      <!-- Hamburger -->
@@ -33,6 +34,7 @@
 <script>
 import Logo from '../assets/logo.png'
 import { debounce } from 'vue-debounce'
+import ThemeToggle from './ThemeToggle.vue'
 
 window.onscroll = debounce(function() {
     if(this.prevScrollpos > window.pageYOffset) {
@@ -45,7 +47,7 @@ window.onscroll = debounce(function() {
     if(this.prevScrollpos === 0) {
         document.getElementById("navbar").style.boxShadow = "none";
     }
-}, 100)
+}, 50)
 
 export default {
     data() {
@@ -60,5 +62,8 @@ export default {
             this.isOpen = !this.isOpen;
         },
     },
+    components: {
+        ThemeToggle
+    }
 }
 </script>
