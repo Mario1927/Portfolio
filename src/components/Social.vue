@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li className='w-[100px] h-[50px] flex justify-between items-center'>
-                <a className='flex justify-between items-center w-full text-[#f9b82c] dark:text-white duration-300' href='/' target='_blank' rel="noreferrer"> 
+                <a className='flex justify-between items-center w-full text-[#f9b82c] dark:text-white duration-300' href="https://drive.google.com/file/d/1dAsOim6CO8D45TihSuxrSJyG-stJD3XD/view?usp=sharing" target='_blank' rel="noreferrer"> 
                     <span class="mx-1"><fa icon="file-pdf" class="fa-xl" /></span>
                 </a>
             </li>
@@ -28,8 +28,9 @@
 </template>
 
 <script>
-export default {
 
+export default {
+    
 }
 </script>
 

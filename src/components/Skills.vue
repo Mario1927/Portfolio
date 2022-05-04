@@ -24,6 +24,10 @@
                       <p className='mt-4'>REACT</p>
                   </div>
                   <div className='bg-slate-200 dark:bg-[#0a192f] shadow-md shadow-[#040c16] py-2 hover:scale-110 duration-500'>
+                      <img className='w-20 mx-auto' :src='VueImg' alt="HTML icon" />
+                      <p className='mt-4'>VUE</p>
+                  </div>
+                  <div className='bg-slate-200 dark:bg-[#0a192f] shadow-md shadow-[#040c16] py-2 hover:scale-110 duration-500'>
                       <img className='w-20 mx-auto' :src='Git' alt="HTML icon" />
                       <p className='mt-4'>GIT</p>
                   </div>
@@ -49,6 +53,7 @@ import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
 import ReactImg from '../assets/react.png';
+import VueImg from '../assets/vue.png';
 import Node from '../assets/node.png';
 import Git from '../assets/git.png';
 import Mongo from '../assets/mongo.png';
@@ -64,7 +69,8 @@ export default {
             Node,
             Git,
             Mongo,
-            PostgreSQL
+            PostgreSQL,
+            VueImg
         }
     }
 }

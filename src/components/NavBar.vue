@@ -1,7 +1,7 @@
 <template>
   <div id="navbar" className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-slate-100 dark:bg-[#0a192f] text-[#233554] font-semibold dark:text-gray-300  z-20 duration-300'>
       <div>
-          <img :src=Logo alt="Brand Logo" className="w-[30px]"/>
+          <img :src=Logo alt="Brand Logo" className="w-[60px]"/>
       </div>
 
       <!-- Menu -->

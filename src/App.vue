@@ -9,6 +9,7 @@ import Work from './components/Work.vue'
 import Social from './components/Social.vue'
 import Email from './components/Email.vue'
 import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 
 </script>
 
@@ -23,6 +24,7 @@ import Contact from './components/Contact.vue'
       <Skills />
       <Work />
       <Contact />
+      <Footer />
     </div>
   </div>
 </template>
