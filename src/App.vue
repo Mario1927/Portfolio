@@ -8,6 +8,7 @@ import Skills from './components/Skills.vue'
 import Work from './components/Work.vue'
 import Social from './components/Social.vue'
 import Email from './components/Email.vue'
+import Contact from './components/Contact.vue'
 
 </script>
 
@@ -20,7 +21,8 @@ import Email from './components/Email.vue'
       <Home />
       <About />
       <Skills />
-      <Work />      
+      <Work />
+      <Contact />
     </div>
   </div>
 </template>
