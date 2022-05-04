@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-slate-400;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #f9b82c;
+    border: 3px solid #f9b82c;
+    border-radius: 10px;
+  }
+
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;

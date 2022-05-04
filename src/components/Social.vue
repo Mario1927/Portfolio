@@ -1,7 +1,7 @@
 <template>
     <!-- Close Button -->
     <div className='hidden md:flex fixed flex-col top-[65%] left-[0.5rem]'>
-        <ul>
+        <ul className="animate__bounce">
             <li className='w-[100px] h-[50px] flex justify-between items-center'>
                 <a className='flex justify-between items-center w-full text-[#f9b82c] dark:text-white duration-300' href='https://www.linkedin.com/in/mario1927/' target='_blank' rel="noreferrer"> 
                    <fa :icon="['fab', 'linkedin']" class="fa-xl" />
