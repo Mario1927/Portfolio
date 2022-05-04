@@ -1,6 +1,6 @@
 <template>
-  <fa @click="toggleTheme" icon="moon" v-if="dark" />
-  <fa @click="toggleTheme" icon="sun" v-else />
+  <fa @click="toggleTheme" icon="sun" class="fa-beat" v-if="dark" />
+  <fa @click="toggleTheme" icon="moon" class="fa-beat" v-else />
 </template>
 
 <script>

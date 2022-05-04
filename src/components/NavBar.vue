@@ -11,7 +11,7 @@
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#skills'">Skills</li>
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#works'">Works</li>
         <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer" v-scroll-to="'#contact'">Contact</li>
-        <li className="hover:text-pink-600 duration-300 px-4 cursor-pointer"><ThemeToggle/></li>
+        <li className="hover:text-[#0a192f] dark:hover:text-slate-100 duration-300 px-4 cursor-pointer text-pink-600"><ThemeToggle/></li>
      </ul>
 
      <!-- Hamburger -->

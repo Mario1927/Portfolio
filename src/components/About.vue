@@ -8,7 +8,7 @@
                 <div></div>
                 </div>
                 <div className='max-w-[750px] w-full first:grid sm:grid-cols-2 gap-8'>
-                    <div className='text-4xl font-bold text-[#233554] dark:text-[#f9b82c]'>
+                    <div className='text-4xl font-bold text-[#f9b82c]'>
                         <p>Hi, again. Nice to meet you. Please take a look around.</p>
                     </div>
                     <div>
