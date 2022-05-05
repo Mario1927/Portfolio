@@ -35,6 +35,9 @@ import { mapGetters } from 'vuex'
 if(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches){ localStorage.theme = 'dark' }
 else if(!('theme' in localStorage)){ localStorage.theme = 'light' }
 
+if(!('lang' in localStorage) && navigator.language.includes('es')){ localStorage.lang = 'es' }
+else if(!('lang' in localStorage)){ localStorage.lang = 'en' }
+
 export default {
   computed: {
     ...mapGetters(['dark'])

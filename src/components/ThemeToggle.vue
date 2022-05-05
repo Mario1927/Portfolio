@@ -15,13 +15,6 @@ export default {
             this.SET_DARK(!this.dark),
             window.localStorage.setItem("theme", !this.dark ? "light" : "dark")
         },
-        toggleClass() {
-            document.getElementById('app').classList.toggle('dark')
-        },
     },
 }
 </script>
-
-<style>
-
-</style>

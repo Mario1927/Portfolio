@@ -3,21 +3,21 @@
       <div className='max-w-[750px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
             <p className='text-4xl font-bold inline border-b-4 text-[#0a192f] dark:text-gray-300 border-pink-600'>
-                Work
+                {{ text.title }}
             </p>
-            <p className='py-3 text-[#112240] font-medium dark:text-[#f9b82c] dark:font-normal'>// Check out some of my recent work</p>
+            <p className='py-3 text-[#112240] font-medium dark:text-[#f9b82c] dark:font-normal'>{{ text.subtitle }}</p>
         </div>
 
         <!-- First project -->
         <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12'>
             <div className="flex flex-col md:w-[60%] py-4">
                 <div className="flex flex-col relative top-[-35px]">
-                    <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">Featured Project</span>
-                    <h3 className=" text-2xl font-semibold">Videogames App</h3>
+                    <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">{{ text.work01.subtitle }}</span>
+                    <h3 className=" text-2xl font-semibold">{{ text.work01.title }}</h3>
                 </div>
                 <div className="md:p-4 md:w-[130%] rounded md:bg-slate-300 dark:md:bg-[#112240] z-10">
                     <p className=" text-sm text-justify font-medium dark:font-normal">
-                        A SPA that consumes data from an external API, and allows general and detailed information of more than 500,000 video games to be displayed, among the functionalities it allows filtering and ordering video games by different variables such as genre, platforms, name, rating.
+                        {{ text.work01.description }}
                     </p>
                 </div>
                 <div className="flex md:w-[130%] z-10 pt-4">
@@ -51,12 +51,12 @@
             </a>
             <div className="flex flex-col md:w-[60%] py-4">
                 <div className="flex flex-col relative top-[-35px] text-right">
-                    <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">Featured Project</span>
-                    <h3 className=" text-2xl font-semibold">Eztinerary Travel App</h3>
+                    <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">{{ text.work02.subtitle }}</span>
+                    <h3 className=" text-2xl font-semibold">{{ text.work02.title }}</h3>
                 </div>
                 <div className="md:p-4 md:w-[130%] relative md:right-[30%]  rounded md:bg-slate-300 dark:md:bg-[#112240] z-10">
                     <p className=" text-sm text-justify font-medium dark:font-normal">
-                        A SPA for searching and planning tourist activities. On this groupal project there was an implementation of the SCRUM methodology, my principal tasks were focused on the back-end by using Node, Typescript, Moongose, route authentication and authorization through Passport, JWT, Cookies, BCrypt, among other technologies used.
+                        {{ text.work02.description }}
                     </p>
                 </div>
                 <div className="flex md:w-[130%] relative md:right-[30%] z-10 pt-4">
@@ -87,12 +87,12 @@
         <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12'>
             <div className="flex flex-col md:w-[60%] py-4">
                 <div className="flex flex-col relative top-[-35px]">
-                    <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">Featured Project</span>
-                    <h3 className=" text-2xl font-semibold">Weather App</h3>
+                    <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">{{ text.work03.subtitle }}</span>
+                    <h3 className=" text-2xl font-semibold">{{ text.work03.title }}</h3>
                 </div>
                 <div className="md:p-4 md:w-[130%] rounded md:bg-slate-300 dark:md:bg-[#112240] z-10">
                     <p className=" text-sm text-justify font-medium dark:font-normal">
-                        A React/Redux Weather App, that I've been working on, it has the following functionalities: IP o GPS geolocation, Search multiple locations, Weekly forecast (Switchable), Record user preferences, Customize alerts for searchbar, Responsive design.
+                        {{ text.work03.description }}
                     </p>
                 </div>
                 <div className="flex md:w-[130%] z-10 pt-4">
@@ -132,8 +132,51 @@ export default {
             VideogamesPrj,
             EztineraryPrj,
             WeatherPrj,
+            eng: {
+                title: 'Work',
+                subtitle: '// Check out some of my recent work',
+                work01: {
+                    title: 'Videogames App',
+                    subtitle: 'Featured Project',
+                    description: 'A SPA that consumes data from an external API, and allows general and detailed information of more than 500,000 video games to be displayed, among the functionalities it allows filtering and ordering video games by different variables such as genre, platforms, name, rating.'
+                },
+                work02: {
+                    title: 'Eztinerary Travel App',
+                    subtitle: 'Featured Project',
+                    description: 'A SPA for searching and planning tourist activities. On this groupal project there was an implementation of the SCRUM methodology, my principal tasks were focused on the back-end by using Node, Typescript, Moongose, route authentication and authorization through Passport, JWT, Cookies, BCrypt, among other technologies used.'
+                },
+                work03: {
+                    title: 'Weather App',
+                    subtitle: 'Featured Project',
+                    description: "A React/Redux Weather App, that I've been working on, it has the following functionalities: IP o GPS geolocation, Search multiple locations, Weekly forecast (Switchable), Record user preferences, Customize alerts for searchbar, Responsive design."
+                },
+            }, 
+            es: {
+                title: 'Proyectos',
+                subtitle: '// Mira algunos de mis proyectos más recientes',
+                work01: {
+                    title: 'Aplicación de Videojuegos',
+                    subtitle: 'Proyecto Destacado',
+                    description: 'Una SPA que consume datos de una API externa, y permite la visualización de información general y detallada de más de 500,000 videojuegos, entre las funcionalidades que dispone esta APP está el filtrar y ordenar videojuegos por diferentes variables como género, plataformas, nombre, calificación, además de la creación de nuevos videojuegos, mediante un formulario controlado.'
+                },
+                work02: {
+                    title: 'Eztinerary - App de Viajes',
+                    subtitle: 'Proyecto Destacado',
+                    description: 'Una SPA para buscar y planificar actividades turísticas. En este proyecto de grupo se implementó la metodologia SCRUM, mis tareas principales se centraron en el back-end, usando Node, Typescript, Mongoose, autenticación y autorización de rutas mediante Passport, JWT, Cookies, BCrypt, entre otras tecnologías.'
+                },
+                work03: {
+                    title: 'Aplicación del Tiempo',
+                    subtitle: 'Proyecto Destacado',
+                    description: "Una aplicación de React/Redux para conocer el pronóstico del tiempo, la cuál cuenta con las siguientes funcionalidades: geolocalización mediante IP o GPS, búsqueda de multiples localizaciones, pronóstico semanal, preferencias de usuario, alertas customizadas y diseño responsivo."
+                }
+            },
         }
-    }
+    }, 
+    computed: {
+        text() {
+            return this.$store.state.lang === 'en' ? this.eng : this.es
+        }
+    },
 }
 </script>
 

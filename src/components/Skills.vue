@@ -2,8 +2,8 @@
           <div id='skills' className='w-full md:w-[90%] h-screen mx-auto bg-slate-100 dark:bg-[#0a192f] text-[#0a192f] dark:text-gray-300'>
           <div className='max-w-[750px] mx-auto py-4 px-5 flex flex-col justify-center w-full h-full'>
               <div>
-                  <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Skills</p>
-                  <p className='py-4 text-[#f9b82c] font-medium dark:font-normal'>// These are the technologies I've worked with</p>
+                  <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>{{ text.title }}</p>
+                  <p className='py-4 text-[#f9b82c] font-medium dark:font-normal'>{{ text.subtitle }}</p>
               </div>
     
               <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8 font-bold dark:font-normal'>
@@ -70,7 +70,20 @@ export default {
             Git,
             Mongo,
             PostgreSQL,
-            VueImg
+            VueImg, 
+            eng: {
+                title: 'Skills',
+                subtitle: '// These are the technologies I\'ve worked with',
+            },
+            es: {
+                title: 'Habilidades',
+                subtitle: '// Estas son las tecnologías con las que he trabajado',
+            },
+        }
+    },
+    computed: {
+        text() {
+            return this.$store.state.lang === 'en' ? this.eng : this.es
         }
     }
 }
