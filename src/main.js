@@ -7,6 +7,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueScrollTo from 'vue-scrollto'
 import { store } from './store/index.js'
+import VueObserveVisibility from 'vue-observe-visibility'
 
 library.add(fas)
 library.add(faLinkedin)
@@ -14,6 +15,7 @@ library.add(faGithub)
 
 createApp(App)
 .use(VueScrollTo)
+.use(VueObserveVisibility)
 .use(store)
 .component('fa', FontAwesomeIcon)
 .mount('#app')
