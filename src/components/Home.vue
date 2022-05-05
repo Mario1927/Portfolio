@@ -6,10 +6,11 @@
             <h2 className='text-3xl md:text-6xl font-bold text-[#f9b82c] max-w-[750px]'>{{ text.subtitle }}</h2>
             <p className='text-slate-700 font-medium dark:text-slate-100 dark:font-normal  py-4 max-w-[750px] text-justify my-4'>{{ text.text }}</p>
             <div>
-                <button className='text-[#233554] dark:text-white border-[#f9b82c] dark:border-slate-100  font-semibold border-2 rounded px-6 py-3 my-2 flex items-center hover:bg-pink-600 dark:hover:bg-pink-600 hover:border-pink-600 hover:text-white duration-300' v-scroll-to="'#works'">
-                    {{ text.button }}
-                </button>
-                
+                <a :href="link" target='_blank' rel="noreferrer">
+                    <button className='text-[#233554] dark:text-white border-[#f9b82c] dark:border-slate-100  font-semibold border-2 rounded px-6 py-5 my-2 flex items-center hover:bg-pink-600 dark:hover:bg-pink-600 hover:border-pink-600 hover:text-white duration-300'>
+                        {{ text.button }}
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -24,19 +25,22 @@ export default {
                 title: 'Hi, my name is',
                 subtitle: 'I\'m a Full Stack Developer and Geographer',
                 text: 'Currently, I could say that I\'m enjoying the web development world alongside my other passion the Geography, everyday on this tech world has become a opportunity to keep learning about new features that later I try to include on my works and improve them.',
-                button: 'View work'
+                button: 'Check out my resume!'
             },
             es: {
                 title: 'Hola, mi nombre es',
                 subtitle: 'Soy un Desarrollador Full Stack y Geógrafo',
                 text: 'Actualmente, puedo decir que estoy disfrutando del mundo del desarrollo web junto a mi otra pasión la Geografía, cada día en el mundo del desarrollo se ha convertido en una oportunidad para seguir aprendiendo sobre nuevas características, implementaciones y demás, las cuáles siempre trato de incluir en mis trabajos para que tengan una mejoría constante.',
-                button: 'Ver mis trabajos'
+                button: 'Mira mi curriculum'
             }
         }
     }, 
     computed: {
         text() {
             return this.$store.state.lang === 'en' ? this.eng : this.es
+        },
+        link(){
+            return this.$store.state.lang === 'en' ? 'https://drive.google.com/file/d/1dAsOim6CO8D45TihSuxrSJyG-stJD3XD/view?usp=sharing' : 'https://drive.google.com/file/d/1aMk9dMyl2PQ0L-c7CfW9DMp5Iq_4cYxL/view?usp=sharing'
         }
     }
 }
