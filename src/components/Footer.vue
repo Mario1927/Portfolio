@@ -44,6 +44,9 @@ export default {
   computed: {
     text() {
       return this.$store.state.lang === 'en' ? this.eng : this.es
+    },
+    link(){
+      return this.$store.state.lang === 'en' ? 'https://drive.google.com/file/d/1dAsOim6CO8D45TihSuxrSJyG-stJD3XD/view?usp=sharing' : 'https://drive.google.com/file/d/1aMk9dMyl2PQ0L-c7CfW9DMp5Iq_4cYxL/view?usp=sharing'
     }
   }
 }
