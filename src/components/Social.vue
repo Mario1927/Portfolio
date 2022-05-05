@@ -23,7 +23,7 @@
                 </a>
             </li>
         </ul>
-        <div className="w-[2px] h-[135px] flex fixed top-[87.5%] left-[1.15rem] border border-[#0a192f] dark:border-[#f9b82c] mx-auto mt-2"/>
+        <div className="w-[2px] h-[200px] flex fixed top-[87.5%] left-[1.15rem] border border-[#0a192f] dark:border-[#f9b82c] mx-auto mt-2"/>
     </div>
 </template>
 

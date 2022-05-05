@@ -7,7 +7,7 @@
                 </a>
             </li>
         </ul>
-        <div className="w-[2px] h-[135px] flex fixed top-[87.5%] border border-[#0a192f] dark:border-[#f9b82c] right-[1.15rem] mx-auto mt-2"/>
+        <div className="w-[2px] h-[200px] flex fixed top-[87.5%] border border-[#0a192f] dark:border-[#f9b82c] right-[1.15rem] mx-auto mt-2"/>
     </div>
 </template>
 

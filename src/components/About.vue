@@ -1,6 +1,6 @@
 <template>
-    <div id='about' className='w-full md:w-[90%] h-screen flex flex-row mx-auto bg-slate-100 dark:bg-[#0a192f]'>
-        <div className='flex flex-col justify-center items-center w-full h-full mx-auto px-8'>
+    <div id='about' className='w-full md:w-[90%] min-h-screen flex flex-row mx-auto bg-slate-100 dark:bg-[#0a192f]'>
+        <div className='flex flex-col justify-center items-center w-full h-full m-auto px-8'>
             <div className='max-w-[750px] w-full grid grid-cols-2 gap-8'>
                 <div className='pb-8'>
                     <p className='text-4xl text-[#0a192f] dark:text-gray-300 font-bold inline border-b-4 border-pink-600'>{{ text.section }}</p>
