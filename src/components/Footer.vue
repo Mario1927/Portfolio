@@ -51,3 +51,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+    a:hover {
+        color: rgb(219 39 119);
+    }
+</style>
