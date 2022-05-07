@@ -1,6 +1,6 @@
 <template>
     <!-- Close Button -->
-    <div className='hidden md:flex fixed flex-col top-[65%] left-[0.5rem]'>
+    <div className='hidden md:flex fixed flex-col bottom-[150px] left-[0.5rem]'>
         <ul className="animate__bounce">
             <li className='w-[100px] h-[50px] flex justify-between items-center'>
                 <a className='flex justify-between items-center w-full text-[#f9b82c] dark:text-white duration-300' href='https://www.linkedin.com/in/mario1927/' target='_blank' rel="noreferrer"> 
@@ -23,7 +23,7 @@
                 </a>
             </li>
         </ul>
-        <div className="w-[2px] h-[200px] flex fixed top-[87.5%] left-[1.15rem] border border-[#0a192f] dark:border-[#f9b82c] mx-auto mt-2"/>
+        <div className="w-[2px] h-[140px] flex fixed bottom-[0px] left-[1.15rem] border border-[#0a192f] dark:border-[#f9b82c] mx-auto mt-2"/>
     </div>
 </template>
 
