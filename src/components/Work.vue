@@ -2,14 +2,14 @@
   <div id='works' className='flex w-full md:w-[90%] min-h-screen my-auto mx-auto text-[#0a192f] dark:text-gray-300 bg-slate-100 dark:bg-[#0a192f]'>
       <div className='max-w-[750px] m-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 text-[#0a192f] dark:text-gray-300 border-pink-600'>
+            <p className='text-4xl font-bold inline border-b-4 text-[#0a192f] dark:text-gray-300 border-pink-600' data-aos="fade-in">
                 {{ text.title }}
             </p>
-            <p className='py-3 text-[#112240] font-medium dark:text-[#f9b82c] dark:font-normal'>{{ text.subtitle }}</p>
+            <p className='py-3 text-[#112240] font-medium dark:text-[#f9b82c] dark:font-normal' data-aos="fade-in">{{ text.subtitle }}</p>
         </div>
 
         <!-- First project -->
-        <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12'>
+        <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12' data-aos="fade-in">
             <div className="flex flex-col md:w-[60%] py-4">
                 <div className="flex flex-col relative top-[-35px]">
                     <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">{{ text.work01.subtitle }}</span>
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Second project -->
-        <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12'>
+        <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12' data-aos="fade-in">
             <a className="hidden md:flex w-[70%] h-[250px] my-auto z-0 overflow-hidden" href='https://eztinerary.vercel.app/' target='_blank' rel="noreferrer">
                 <div className="bg md:flex w-full h-full my-auto z-0 bg-cover hover:bg-transparent duration-300" :style="{'background-image': 'url(' + EztineraryPrj + ')'}"/>
             </a>
@@ -84,7 +84,7 @@
         </div>
 
         <!-- Third project -->
-        <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12'>
+        <div className='flex bg-slate-300 dark:bg-[#112240] bg-cover px-8 py-12 md:bg-transparent dark:md:bg-transparent md:p-0 mb-12' data-aos="fade-in">
             <div className="flex flex-col md:w-[60%] py-4">
                 <div className="flex flex-col relative top-[-35px]">
                     <span className="text-[#f9b82c] dark:text-[#64ffda] text-sm font-medium">{{ text.work03.subtitle }}</span>

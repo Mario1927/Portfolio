@@ -1,6 +1,6 @@
 <template>
   <div id='contact' className='w-full md:w-[90%] mx-auto min-h-screen flex flex-row bg-slate-100 dark:bg-[#0a192f]'>
-    <form method="POST" action="https://getform.io/f/bc1973b9-3837-47fa-8e1e-29d2d37b9c0a" className='max-w-[750px] m-auto p-4 flex flex-col justify-center w-full h-full'>
+    <form method="POST" action="https://getform.io/f/bc1973b9-3837-47fa-8e1e-29d2d37b9c0a" className='max-w-[750px] m-auto p-4 flex flex-col justify-center w-full h-full' data-aos="fade-in">
         <div className="pb-8">
             <p className='text-4xl text-[#0a192f] dark:text-gray-300 font-bold inline border-b-4 border-pink-600'>{{ text.title }}</p>
             <p className='py-4 text-[#f9b82c] font-medium dark:font-normal'>{{ text.subtitle}}</p>

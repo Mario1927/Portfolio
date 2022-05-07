@@ -10,6 +10,8 @@ import Social from './components/Social.vue'
 import Email from './components/Email.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
+import 'animate.css'
+import 'aos/dist/aos.css'
 
 </script>
 
@@ -31,6 +33,7 @@ import Footer from './components/Footer.vue'
 
 <script>
 import { mapGetters } from 'vuex'
+import AOS from 'aos'
 
 if(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches){ localStorage.theme = 'dark' }
 else if(!('theme' in localStorage)){ localStorage.theme = 'light' }
@@ -41,6 +44,13 @@ else if(!('lang' in localStorage)){ localStorage.lang = 'en' }
 export default {
   computed: {
     ...mapGetters(['dark'])
+  }, 
+  mounted() {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    })
   }
 }
 </script>

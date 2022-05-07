@@ -40,7 +40,6 @@
 import Logo from '../assets/logo.png'
 import { debounce } from 'vue-debounce'
 import ThemeToggle from './ThemeToggle.vue'
-import 'animate.css'
 import LanguageToggle from './LanguageToggle.vue'
 
 window.onscroll = debounce(function() {
