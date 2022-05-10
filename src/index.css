@@ -30,5 +30,6 @@
 }
 
 :root {
-  --animate-delay: 0.5s;
+  --animate-delay: 0.25s;
+  --animate-duration: 1.15s;
 }
